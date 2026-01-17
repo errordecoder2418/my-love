@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music/love.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating Hearts -->
+  <div class="hearts"></div>
+
+  <div id="app">
+
+    <!-- PAGE 1 -->
+    <div class="page active">
+      <h1 class="name">MUTTAKANNI ❤️</h1>
+      <p class="question">Do you love me?</p>
+
+      <div class="buttons">
+        <button class="yes-btn" onclick="startLove()">Yes 💖</button>
+        <button class="no-btn" id="noBtn">No 😜</button>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+      <img src="images/pic1.jpg" />
+      <div class="quote-box">
+        <p class="quote">"Every time I think of you, my heart feels calm and full at the same time."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+      <img src="images/pic2.jpg" />
+      <div class="quote-box">
+        <p class="quote">"You are not just a part of my life, you are the reason it feels beautiful."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div class="page">
+      <img src="images/pic3.jpg" />
+      <div class="quote-box">
+        <p class="quote">"No matter how far we are, my heart always knows where you are."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div class="page">
+      <img src="images/pic4.jpg" />
+      <div class="quote-box">
+        <p class="quote">"You feel like home to me, even from miles away."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div class="page">
+      <img src="images/pic5.jpg" />
+      <div class="quote-box">
+        <p class="quote">"I don’t need perfect days, I just need days with you in my thoughts."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div class="page">
+      <img src="images/pic6.jpg" />
+      <div class="quote-box">
+        <p class="quote">"Loving you feels easy, natural, and endlessly right."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div class="page">
+      <img src="images/pic7.jpg" />
+      <div class="quote-box">
+        <p class="quote">"You are my favorite thought, every single day."</p>
+      </div>
+      <button onclick="nextPage()">Next 💕</button>
+    </div>
+
+    <!-- FINAL PAGE -->
+    <div class="page">
+      <h1 class="birthday-title">Happy Birthday, My Love 🎂</h1>
+
+      <p class="final-text romantic-final">
+        On your special day, I just want you to know<br/>
+        how deeply loved you truly are.<br/><br/>
+
+        You are my happiness, my comfort,<br/>
+        and my favorite part of every day.<br/><br/>
+
+        I wish you the happiest birthday,<br/>
+        filled with smiles, warmth, and love —<br/>
+        just like the love you give me.<br/><br/>
+
+        Always yours ❤️
+      </p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

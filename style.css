@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,500&family=Poppins:wght@300;400&family=Dancing+Script:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Floating Hearts */
+.hearts::before {
+  content: "❤️ 💕 💖 💘 💗";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  animation: floatHearts 12s linear infinite;
+  opacity: 0.25;
+  font-size: 28px;
+  text-align: center;
+}
+
+@keyframes floatHearts {
+  from { transform: translateY(100%); }
+  to { transform: translateY(-100%); }
+}
+
+#app {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.page {
+  display: none;             /* hidden by default */
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.page.active {
+  display: flex;             /* show active page */
+}
+
+.name {
+  font-size: 30px;
+  color: #fff;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.question {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 90%;
+  max-width: 350px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.quote-box {
+  width: 90%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+/* FINAL PAGE */
+.birthday-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.romantic-final {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+button {
+  background: #ff4d6d;
+  border: none;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.no-btn {
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* First Page Romantic Text */
+.name {
+  font-family: 'Dancing Script', cursive; /* cursive, romantic */
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  animation: pulse 2.5s infinite;
+}
+
+.question {
+  font-family: 'Playfair Display', serif; /* elegant and romantic */
+  font-size: 22px;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.35);
+  margin-bottom: 25px;
+}
